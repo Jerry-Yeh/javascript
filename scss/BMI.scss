@@ -1,0 +1,201 @@
+@import 'variable';
+@import 'reset';
+
+.wrap {
+    font-family:Microsoft JhengHei;
+    header {
+        background: #424242;
+        height: 300px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        .icon {
+            width: 117px;
+            height: 117px;
+        }
+        .input {
+            display: flex;
+            flex-direction: column;
+            width: 250px;
+            margin: 0 50px;
+            label {
+                display: flex;
+                font-size: $font-size-m;
+                color: #FFD366;
+            }
+            input {
+                display: flex;    
+                background: rgba(255,255,255,0.18);
+                border: 2px solid #FFD366;
+                border-radius: 10px;       
+                height: 40px;    
+                box-sizing: border-box; 
+                margin: 5px 0 23px;
+                font-size: $font-size-xl;
+                text-indent: 16px;
+                color: #fff;
+            }
+        }
+        .send {
+            width: 120px;
+            height: 120px;
+            background: #FFD366;
+            border-radius: 120px;
+            display:block;
+            text-align: center;
+            line-height: 120px;
+            color: #424242;
+            span {
+                font-size: $font-size-xl;
+            }
+        }
+        .send:hover {
+            cursor: pointer;
+            background: #FFD366;
+            box-shadow: 0 1px 6px 3px rgba(255,196,50,0.64);
+        }
+        .send:active {
+            background: #DEA821;
+        }
+        .result{
+            width: 120px;
+            height: 120px;
+            border-radius: 120px;
+            text-align: center;
+            position: relative;
+            padding-top: 30px;
+            box-sizing: border-box;
+            .data {
+                font-size: $font-size-xxl;
+            }
+            .BMI {
+                font-size: $font-size-s;
+            }
+            .loop {
+                width: 30px;
+                height: 30px;
+                border-radius: 30px;  
+                border: 3px solid #424242;
+                position: absolute;
+                right: -5%;
+                top: 70%;
+                padding-top:3px;
+                box-sizing: border-box;
+            }
+            .loop-l {
+                background: #31BAF9;
+            }
+            .loop-n {
+                background: #86D73F;
+            }
+            .loop-o {
+                background: #FF982D;
+            }
+            .loop-oo,.loop-ooo {
+                background:  #FF6C03;
+            }
+            .loop-oooo {
+                background: #FF1200;
+            }
+            .lv {
+                position: absolute;
+                top : 30px;
+                left: 130px;
+                font-size:$font-size-xxl;
+                width: 128px;
+                text-align: left;
+            }
+        }
+        .result:hover {
+            cursor: pointer;
+        }
+        .result-l {
+            border: 6px solid #31BAF9;
+            color: #31BAF9;
+        }
+        .result-n {
+            border: 6px solid #86D73F;
+            color: #86D73F;
+        }
+        .result-o {
+            border: 6px solid #FF982D;
+            color: #FF982D;
+        }
+        .result-oo,.result-ooo {
+            border: 6px solid #FF6C03;
+            color: #FF6C03;
+        }
+        .result-oooo {
+            border: 6px solid #FF1200;
+            color: #FF1200;
+        }
+    }
+    .container {
+        background: #ededed;
+        padding-top: 48px;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        h2 {
+            display:block;
+            font-size: $font-size-xl;
+            color: #424242;
+            margin-bottom: 36px;
+        }
+        .list {
+            width: 680px;
+            margin-bottom: 58px;
+            li {
+                height: 62px;
+                display: flex;
+                align-items: center;
+                padding: 0 12px;
+                font-size: $font-size-xxs;
+                margin-bottom: 16px;
+                background: #fff;
+                span {
+                    font-size: $font-size-l;
+                }
+                .lv {
+                    margin-right: 70px;
+                    
+                }
+                .lv-o {
+                    margin-right: 30px;
+                }
+                .weight {
+                    width: 60px;
+                }
+                .bmi,.weight ,.height{
+                    margin: 0 42px 0 6px;
+                }
+                a{
+                    text-decoration: none;
+                    color: red;
+                    font-size: $font-size-l;
+                    margin-left: 10px;
+                }
+            }
+            .line-l {
+                border-left: 7px solid #31BAF9;
+            }
+            .line-n {
+                border-left: 7px solid #86D73F;
+            }
+            .line-o {
+                border-left: 7px solid #FF982D;
+            }
+            .line-oo,.line-ooo {
+                border-left: 7px solid #FF6C03;
+            }
+            .line-oooo {
+                border-left: 7px solid #FF1200;
+            }
+        }
+    }
+    footer {
+        height: 90px;
+        background: #FFD366;
+    }
+}

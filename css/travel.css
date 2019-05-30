@@ -1,0 +1,224 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* reset css end */
+.wrap {
+  width: 1024px;
+  margin: 0 auto;
+  font-family: Microsoft JhengHei Regular;
+  line-height: 1.5; }
+  @media (max-width: 375px) {
+    .wrap {
+      width: 100%; } }
+
+.header {
+  background: url(../img/Hero.png) no-repeat;
+  height: auto;
+  text-align: center;
+  padding-top: 75px;
+  margin-bottom: 50px; }
+  .header h1 {
+    font-size: 32px;
+    color: white;
+    margin-bottom: 90px;
+    letter-spacing: 3.89px; }
+  .header select {
+    width: 452px;
+    height: 48px;
+    font-size: 18px;
+    font-family: Microsoft JhengHei Regular;
+    padding: 0 10px;
+    background: url(../img/icons_down.png) no-repeat;
+    background-position: 98% center;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 80px;
+    border-radius: 3px;
+    /*移除箭頭樣式*/
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none; }
+    @media (max-width: 375px) {
+      .header select {
+        width: 80%; } }
+  .header select:focus {
+    border: 3px solid #fff; }
+  .header .popular {
+    width: 800px;
+    height: 112px;
+    background: #FFFFFF;
+    -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    text-align: left;
+    margin: 0 auto;
+    padding: 20px 26px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+    @media (max-width: 375px) {
+      .header .popular {
+        width: 95%;
+        height: auto; } }
+    .header .popular h2 {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px; }
+      @media (max-width: 375px) {
+        .header .popular h2 {
+          text-align: center; } }
+    .header .popular input {
+      width: 130px;
+      height: 42px;
+      font-size: 20px;
+      color: #FFFFFF;
+      border-radius: 5px;
+      border: 0;
+      margin-left: 30px; }
+      @media (max-width: 375px) {
+        .header .popular input {
+          width: 90%;
+          margin: 0 0 10px 12px;
+          display: none; } }
+    .header .popular input:hover {
+      cursor: pointer; }
+    .header .popular input[value="苓雅區"] {
+      background: #8A82CC; }
+    .header .popular input[value="三民區"] {
+      background: #FFA782; }
+    .header .popular input[value="新興區"] {
+      background: #F5D005; }
+    .header .popular input[value="鹽埕區"] {
+      background: #559AC8; }
+
+.container {
+  position: relative; }
+  .container hr {
+    width: 900px;
+    border: 1px dashed #559AC8; }
+    @media (max-width: 375px) {
+      .container hr {
+        width: 90%; } }
+  .container .down {
+    background: url(../img/icons_down.png) no-repeat center center #fff;
+    width: 24px;
+    height: 24px;
+    border: 1px solid;
+    border-radius: 24px;
+    margin: 0 auto;
+    position: relative;
+    top: -20px;
+    margin-bottom: 50px; }
+  .container h2 {
+    font-size: 36px;
+    color: #8A82CC;
+    text-align: center;
+    margin-bottom: 24px; }
+  .container .list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+    .container .list li {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 45%;
+      text-align: left;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      position: relative;
+      margin-bottom: 36px;
+      -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+      line-height: 32px; }
+      @media (max-width: 375px) {
+        .container .list li {
+          width: 95%; } }
+      .container .list li .picture {
+        height: 155px;
+        background-size: 100%;
+        background-position: 0 -80px;
+        margin-bottom: 16px; }
+        @media (max-width: 375px) {
+          .container .list li .picture {
+            background-position: 0; } }
+      .container .list li h3 {
+        position: absolute;
+        top: 117px;
+        left: 22px;
+        font-size: 24px;
+        color: #fff; }
+      .container .list li h4 {
+        position: absolute;
+        top: 125px;
+        right: 22px;
+        color: #fff;
+        font-size: 16px; }
+      .container .list li .content {
+        margin-left: 24px;
+        font-size: 16px;
+        margin-bottom: 6px; }
+        .container .list li .content img {
+          margin-right: 10px; }
+      .container .list li .ticket {
+        position: absolute;
+        bottom: 8px;
+        right: 22px; }
+
+.footer {
+  height: 90px;
+  background: #559AC8;
+  text-align: center;
+  padding: 24px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 14px; }
+  .footer h2 {
+    color: #fff; }
+  .footer h3 {
+    color: #FFD366; }

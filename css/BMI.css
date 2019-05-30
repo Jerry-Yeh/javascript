@@ -1,0 +1,232 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* reset css end */
+.wrap {
+  font-family: Microsoft JhengHei; }
+  .wrap header {
+    background: #424242;
+    height: 300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .wrap header .icon {
+      width: 117px;
+      height: 117px; }
+    .wrap header .input {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      width: 250px;
+      margin: 0 50px; }
+      .wrap header .input label {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        font-size: 18px;
+        color: #FFD366; }
+      .wrap header .input input {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        background: rgba(255, 255, 255, 0.18);
+        border: 2px solid #FFD366;
+        border-radius: 10px;
+        height: 40px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        margin: 5px 0 23px;
+        font-size: 24px;
+        text-indent: 16px;
+        color: #fff; }
+    .wrap header .send {
+      width: 120px;
+      height: 120px;
+      background: #FFD366;
+      border-radius: 120px;
+      display: block;
+      text-align: center;
+      line-height: 120px;
+      color: #424242; }
+      .wrap header .send span {
+        font-size: 24px; }
+    .wrap header .send:hover {
+      cursor: pointer;
+      background: #FFD366;
+      -webkit-box-shadow: 0 1px 6px 3px rgba(255, 196, 50, 0.64);
+      box-shadow: 0 1px 6px 3px rgba(255, 196, 50, 0.64); }
+    .wrap header .send:active {
+      background: #DEA821; }
+    .wrap header .result {
+      width: 120px;
+      height: 120px;
+      border-radius: 120px;
+      text-align: center;
+      position: relative;
+      padding-top: 30px;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box; }
+      .wrap header .result .data {
+        font-size: 32px; }
+      .wrap header .result .BMI {
+        font-size: 16px; }
+      .wrap header .result .loop {
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+        border: 3px solid #424242;
+        position: absolute;
+        right: -5%;
+        top: 70%;
+        padding-top: 3px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box; }
+      .wrap header .result .loop-l {
+        background: #31BAF9; }
+      .wrap header .result .loop-n {
+        background: #86D73F; }
+      .wrap header .result .loop-o {
+        background: #FF982D; }
+      .wrap header .result .loop-oo, .wrap header .result .loop-ooo {
+        background: #FF6C03; }
+      .wrap header .result .loop-oooo {
+        background: #FF1200; }
+      .wrap header .result .lv {
+        position: absolute;
+        top: 30px;
+        left: 130px;
+        font-size: 32px;
+        width: 128px;
+        text-align: left; }
+    .wrap header .result:hover {
+      cursor: pointer; }
+    .wrap header .result-l {
+      border: 6px solid #31BAF9;
+      color: #31BAF9; }
+    .wrap header .result-n {
+      border: 6px solid #86D73F;
+      color: #86D73F; }
+    .wrap header .result-o {
+      border: 6px solid #FF982D;
+      color: #FF982D; }
+    .wrap header .result-oo, .wrap header .result-ooo {
+      border: 6px solid #FF6C03;
+      color: #FF6C03; }
+    .wrap header .result-oooo {
+      border: 6px solid #FF1200;
+      color: #FF1200; }
+  .wrap .container {
+    background: #ededed;
+    padding-top: 48px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .wrap .container h2 {
+      display: block;
+      font-size: 24px;
+      color: #424242;
+      margin-bottom: 36px; }
+    .wrap .container .list {
+      width: 680px;
+      margin-bottom: 58px; }
+      .wrap .container .list li {
+        height: 62px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding: 0 12px;
+        font-size: 12px;
+        margin-bottom: 16px;
+        background: #fff; }
+        .wrap .container .list li span {
+          font-size: 20px; }
+        .wrap .container .list li .lv {
+          margin-right: 70px; }
+        .wrap .container .list li .lv-o {
+          margin-right: 30px; }
+        .wrap .container .list li .weight {
+          width: 60px; }
+        .wrap .container .list li .bmi, .wrap .container .list li .weight, .wrap .container .list li .height {
+          margin: 0 42px 0 6px; }
+        .wrap .container .list li a {
+          text-decoration: none;
+          color: red;
+          font-size: 20px;
+          margin-left: 10px; }
+      .wrap .container .list .line-l {
+        border-left: 7px solid #31BAF9; }
+      .wrap .container .list .line-n {
+        border-left: 7px solid #86D73F; }
+      .wrap .container .list .line-o {
+        border-left: 7px solid #FF982D; }
+      .wrap .container .list .line-oo, .wrap .container .list .line-ooo {
+        border-left: 7px solid #FF6C03; }
+      .wrap .container .list .line-oooo {
+        border-left: 7px solid #FF1200; }
+  .wrap footer {
+    height: 90px;
+    background: #FFD366; }
